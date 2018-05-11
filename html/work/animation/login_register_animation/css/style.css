@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+.account_box {
+    width: 500px;
+    margin: 100px auto;
+    position: relative;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~  login-box  */
+
+.login_box {
+    float: left;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.login_box h1,
+.register_box h1 {
+    font-size: 32px;
+    line-height: 36px;
+    color: #ff5654;
+    margin: 30px 0 0;
+    text-transform: uppercase;
+}
+
+.login_box form,
+.register_box form {
+    float: left;
+    width: 100%;
+}
+
+.login_box form ul,
+.register_box form ul {
+    float: left;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
+.login_box form ul li,
+.register_box form ul li {
+    float: left;
+    width: 100%;
+    margin: 25px 0;
+    position: relative;
+}
+
+.login_box form ul li:before,
+.register_box form ul li:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    z-index: 1;
+    transition: all 0.5s linear 0s;
+    background: #ff5654;
+}
+
+.login_box form ul li.current:before,
+.register_box form ul li.current:before {
+    width: 100%;
+    z-index: 3;
+}
+
+.login_box form ul li:after,
+.register_box form ul li:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    z-index: 2;
+    background: #000;
+}
+
+.login_box form ul li:last-child:before,
+.login_box form ul li:last-child:after,
+.register_box form ul li:last-child:before,
+.register_box form ul li:last-child:after {
+    display: none;
+}
+
+.login_box form ul li:last-child,
+.register_box form ul li:last-child {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.login_box form ul li label,
+.register_box form ul li label {
+    font-size: 16px;
+    line-height: 20px;
+    position: absolute;
+    top: 14px;
+    left: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.login_box form ul li.current label,
+.register_box form ul li.current label {
+    top: -14px;
+    color: #ff5654;
+}
+
+.login_box form ul li input,
+.register_box form ul li input {
+    float: left;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.login_box form ul li input:focus,
+.register_box form ul li input:focus {
+    border-color: #ff5654;
+}
+
+.login_box form ul li button,
+.register_box form ul li button {
+    font-size: 24px;
+    line-height: 28px;
+    color: #ff5654;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 15px 60px;
+    border: 2px solid #ff5654;
+    border-radius: 0;
+    text-transform: uppercase;
+    transition: all 0.3s linear 0s;
+    background: transparent;
+}
+
+.login_box form ul li button:hover,
+.register_box form ul li button:hover {
+    color: #fff;
+    background: #ff5654;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  register-box  */
+
+.register_box {
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: all 0.3s linear 0s;
+    background: #ff5654;
+}
+
+.register_box:after {
+    content: '+';
+    position: absolute;
+    top: -12px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 30px;
+    height: 40px;
+    font-size: 50px;
+    line-height: 54px;
+    color: #fff;
+}
+
+.register_box.open {
+    width: 100%;
+    height: 100%;
+    cursor: default;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.register_box.open:after {
+    display: none;
+}
+
+.register_box * {
+    transition: all 0.3s linear 0s;
+    transform: scale(0);
+}
+
+.register_box.open * {
+    transform: scale(1);
+}
+
+.register_box h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.register_box form ul {
+    margin: 20px 0 0;
+}
+
+.register_box form ul li {
+    margin: 20px 0;
+}
+
+.register_box form ul li:last-child {
+    margin: 30px 0;
+}
+
+.register_box form ul li.current:before {
+    background: #fff;
+}
+
+.register_box form ul li label {
+    color: #000;
+}
+
+.register_box form ul li.current label {
+    color: #fff;
+}
+
+.register_box form ul li input {
+    background: transparent;
+}
+
+.register_box form ul li button {
+    color: #000;
+    border-color: #000;
+}
+
+.register_box form ul li button:hover {
+    border-color: #fff;
+}

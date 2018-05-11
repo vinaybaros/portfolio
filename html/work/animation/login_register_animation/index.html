@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Login/Register Animation</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="account_box">
+
+        <div class="login_box">
+
+            <h1>login</h1>
+
+            <form>
+                <ul>
+                    <li>
+                        <label>Username</label>
+                        <input type="text" class="form-control" />
+                    </li>
+                    <li>
+                        <label>Password</label>
+                        <input type="password" class="form-control" />
+                    </li>
+                    <li>
+                        <button type="submit">go</button>
+                    </li>
+                </ul>
+            </form>
+
+        </div>
+
+        <div class="register_box">
+
+            <h1>register</h1>
+
+            <form>
+                <ul>
+                    <li>
+                        <label>Username</label>
+                        <input type="text" class="form-control" />
+                    </li>
+                    <li>
+                        <label>Password</label>
+                        <input type="password" class="form-control" />
+                    </li>
+                    <li>
+                        <label>Confirm Password</label>
+                        <input type="password" class="form-control" />
+                    </li>
+                    <li>
+                        <button type="submit">submit</button>
+                    </li>
+                </ul>
+            </form>
+
+        </div>
+
+        <div class="clearfix"></div>
+
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $(".account_box .form-control").focus(function() {
+
+                $(this).parent("li").addClass("current");
+
+            });
+
+            $(".account_box .form-control").focusout(function() {
+
+                $(this).parent("li").removeClass("current");
+
+            });
+
+            $(".register_box").click(function() {
+
+                $(this).addClass("open");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

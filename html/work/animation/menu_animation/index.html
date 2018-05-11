@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Menu Animation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="menu_box">
+
+        <ul>
+            <li>
+                <p>
+                    <span>home</span>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <span>about us</span>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <span>portfolio</span>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <span>contact us</span>
+                </p>
+            </li>
+        </ul>
+
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.menu_box ul li').click(function() {
+
+                $('.menu_box').toggleClass('open');
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

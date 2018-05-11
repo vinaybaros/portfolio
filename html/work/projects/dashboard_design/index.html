@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="jquery/jquery-1.9.1.min.js"></script>
+    <script src="jquery/jquery.1.11.1.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(".menu-item").addClass("dropdown");
+            $(".btn-slidermenu").click(function () {
+                if ($("#slidermenu").hasClass("open")) {
+                    $("#slidermenu").removeClass("open");
+                    $("#btn_slidermenu").removeClass("btn-close");
+                } else {
+                    $("#slidermenu").addClass("open");
+                    $("#btn_slidermenu").addClass("btn-close")
+                }
+            });
+            $(".dropdown span.icon-dropdown").click(function () {
+                if ($(this).parent().hasClass("open")) {
+                    $(this).parent().removeClass("open");
+                } else {
+                    $(".dropdown").removeClass("open");
+                    $(this).parent().addClass("open");
+                }
+            });
+            $(".video-message a").click(function () {
+                $(".video-message").addClass("msg-close");
+            });
+
+            var counter = 0;
+
+            function inter() {
+                var myInterval = setInterval(function () {
+                    if (counter < 385) {
+                        ++counter;
+                        document.getElementById("counter").innerHTML = counter;
+                        // alert(counter)
+                    } else {
+                        clearInterval(myInterval);
+                    }
+
+                }, 10)
+            }
+            setInterval(inter, 2000);
+
+
+            var counter1 = 0;
+
+            function inter1() {
+                var myInterval1 = setInterval(function () {
+                    if (counter1 < 460) {
+                        ++counter1;
+                        document.getElementById("counter1").innerHTML = counter1;
+                        // alert(counter)
+                    } else {
+                        clearInterval(myInterval1);
+                    }
+
+                }, 10)
+            }
+            setInterval(inter1, 2000);
+
+            var counter2 = 0;
+
+            function inter2() {
+
+                var myInterval2 = setInterval(function () {
+                    if (counter2 < 470) {
+                        ++counter2;
+                        document.getElementById("counter2").innerHTML = counter2;
+                        // alert(counter)
+
+                    } else {
+                        clearInterval(myInterval2);
+                    }
+
+                }, 10)
+            }
+            setInterval(inter2, 2000);
+
+
+            var counter3 = 0;
+
+            function inter3() {
+                var myInterval3 = setInterval(function () {
+                    if (counter3 < 75) {
+                        ++counter3;
+                        document.getElementById("counter3").innerHTML = counter3;
+                        // alert(counter)
+                    } else {
+                        clearInterval(myInterval3);
+                    }
+
+                }, 10)
+            }
+            setInterval(inter3, 2000);
+
+
+            var counter4 = 0;
+
+            function inter4() {
+                var myInterval4 = setInterval(function () {
+                    if (counter4 < 120) {
+                        ++counter4;
+                        document.getElementById("counter4").innerHTML = counter4;
+                        // alert(counter)
+                    } else {
+                        clearInterval(myInterval4);
+                    }
+
+                }, 10)
+            }
+            setInterval(inter4, 2000);
+
+
+            var counter5 = 0;
+
+            function inter5() {
+                var myInterval5 = setInterval(function () {
+                    if (counter5 < 135) {
+                        ++counter5;
+                        document.getElementById("counter5").innerHTML = counter5;
+                        // alert(counter)
+                    } else {
+                        clearInterval(myInterval5);
+                    }
+
+                }, 10)
+            }
+            setInterval(inter5, 2000);
+
+
+            var counter6 = 0;
+
+            function inter6() {
+                var myInterval6 = setInterval(function () {
+                    if (counter6 < 75) {
+                        ++counter6;
+                        document.getElementById("counter6").innerHTML = counter6;
+                        // alert(counter)
+                    } else {
+                        clearInterval(myInterval6);
+                    }
+
+                }, 10)
+            }
+            setInterval(inter6, 2000);
+
+
+            var counter7 = 0;
+
+            function inter7() {
+                var myInterval7 = setInterval(function () {
+                    if (counter7 < 120) {
+                        ++counter7;
+                        document.getElementById("counter7").innerHTML = counter7;
+                        // alert(counter)
+                    } else {
+                        clearInterval(myInterval7);
+                    }
+
+                }, 10)
+            }
+            setInterval(inter7, 2000);
+
+
+            var counter8 = 0;
+
+            function inter8() {
+                var myInterval8 = setInterval(function () {
+                    if (counter8 < 117) {
+                        ++counter8;
+                        document.getElementById("counter8").innerHTML = counter8;
+                        // alert(counter)
+                    } else {
+                        clearInterval(myInterval8);
+                    }
+
+                }, 10)
+            }
+            setInterval(inter8, 2000);
+
+
+            function decimal_cont() {
+
+                var percent_hours = "2.1";
+                $({
+                    numberValue: 0
+                }).animate({
+                    numberValue: percent_hours
+                }, {
+                    duration: 2000,
+                    easing: 'linear',
+                    progress: function () {
+                        $('.counterNine').text(Math.ceil(this.numberValue * 100) / 100 + "M");
+                    }
+
+                })
+
+                var percent_hours = "2.5";
+                $({
+                    numberValue: 0
+                }).animate({
+                    numberValue: percent_hours
+                }, {
+                    duration: 2000,
+                    easing: 'linear',
+                    progress: function () {
+                        $('.counterTen').text(Math.ceil(this.numberValue * 100) / 100 + "M");
+                    }
+
+                })
+
+                var percent_hours = "2.6";
+                $({
+                    numberValue: 0
+                }).animate({
+                    numberValue: percent_hours
+                }, {
+                    duration: 2000,
+                    easing: 'linear',
+                    progress: function () {
+                        $('.counterEleven').text(Math.ceil(this.numberValue * 100) / 100 + "M");
+                    }
+
+                })
+            }
+
+            setTimeout(decimal_cont, 2000);
+
+
+            if (screen.width < 767) {
+                $('.collapseBox').attr("aria-expanded", "false");
+                $('.collapseBox').removeClass("in");
+            }
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="slidermenu" class="slidermenu-container">
+        <ul class="nav nav-pills">
+            <li>
+                <a href="#">dashboard</a>
+            </li>
+            <li>
+                <a href="#">referrals</a>
+            </li>
+            <li>
+                <a href="#">pipeline</a>
+            </li>
+            <li>
+                <a href="#">users</a>
+            </li>
+            <li>
+                <a href="#">toolbox</a>
+            </li>
+            <li>
+                <a href="#">blog</a>
+            </li>
+            <li>
+                <a href="#">logout</a>
+            </li>
+        </ul>
+    </div>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <a href="#" class="logo">
+                        recruiting
+                        <i>bridge</i>
+                    </a>
+                </div>
+                <div class="col-md-9 col-sm-8 col-xs-6">
+                    <div class="row">
+                        <div class="col-md-8 col-xs-12">
+                            <ul class="hidden-sm hidden-xs">
+                                <li class="active">
+                                    <a href="#">dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#">referrals</a>
+                                </li>
+                                <li>
+                                    <a href="#">pipeline</a>
+                                </li>
+                                <li>
+                                    <a href="#">users</a>
+                                </li>
+                                <li>
+                                    <a href="#">toolbox</a>
+                                </li>
+                                <li>
+                                    <a href="#">blog</a>
+                                </li>
+                            </ul>
+                            <div class="pull-right hidden-lg hidden-md">
+                                <a href="#" id="btn_slidermenu" class="btn-slidermenu">
+                                    <span class="icon-menu"></span>
+                                    <img src="images/icon-close.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 hidden-sm hidden-xs">
+                            <div class="logout">
+                                <a href="#">logout</a>
+                                <i class="glyphicon glyphicon-log-out"></i>
+                            </div>
+                            <div class="welcome-user">
+                                <i class="glyphicon glyphicon-user"></i>
+                                <span>welcome,</span>
+                                <a href="#">josh licht</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="video-message">
+            <i class="icon-video"></i> We've got the video up! Check out our latest training video!
+            <a href="#"><i class="glyphicon glyphicon-remove"></i></a>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row leader-bar">
+            <div class="col-md-4 col-xs-12">
+                <i class="icon-meter"></i>
+                <h2 class="hidden-xs">Team Leader Dashboard</h2>
+                <h2 class="hidden-lg hidden-md hidden-sm">Dashboard</h2>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <input type="text" placeholder="quick referral search" />
+                <button type="button" class="btn btn-search"></button>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 mt-xs-10">
+                <a href="#" class="btn btn-red">
+                    <i class="glyphicon glyphicon-user"></i> Refer a New Lead
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 mt-xs-10">
+                <a href="#" class="btn btn-blk">
+                    <i class="glyphicon glyphicon-user"></i> Invite a New Lead
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- content-top -->
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 mb-xs-30">
+                    <div class="info-box">
+                        <div class="info-top">
+                            <i class="icon-appointment"></i>
+                            <h3>appointments</h3>
+                            <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseExample" class="collapseBox">
+                                <span>-</span>
+                                <span>+</span>
+                            </button>
+                        </div>
+                        <div class="info-middle ht80">
+                            <div class="meter meterOne">
+                                <i>last year</i>
+                                <div class="meter-circle">
+                                    <div class="meter-circle-inner">
+                                        <img src="images/meterOne.png" alt="" />
+                                    </div>
+                                </div>
+                                <div id="counter">0</div>
+                            </div>
+                            <div class="meter meterTwo">
+                                <i>goal</i>
+                                <div class="meter-circle">
+                                    <div class="meter-circle-inner">
+                                        <img src="images/meterTwo.png" alt="" />
+                                    </div>
+                                </div>
+                                <div id="counter1">0</div>
+                            </div>
+                            <div class="meter meterThree">
+                                <i>actual</i>
+                                <div class="meter-circle">
+                                    <div class="meter-circle-inner">
+                                        <img src="images/meterThree.png" alt="" />
+                                    </div>
+                                </div>
+                                <div id="counter2">0</div>
+                            </div>
+                        </div>
+                        <div class="info-bottom">
+                            <div class="collapse in collapseBox" id="collapseOne" aria-expanded="true">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Goal</td>
+                                            <td>
+                                                <span>Actual</span>
+                                                <span>86%</span>
+                                            </td>
+                                            <td>
+                                                <span>Goal</span>
+                                                <div class="clearfix"></div>
+                                                <span>92%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Performance</td>
+                                            <td>
+                                                <span>Last Year</span>
+                                                <span>66%</span>
+                                            </td>
+                                            <td>
+                                                <span>Actual</span>
+                                                <span>105%</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 mb-xs-30">
+                    <div class="info-box">
+                        <div class="info-top">
+                            <i class="icon-agent"></i>
+                            <h3>agent count(gross)</h3>
+                            <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseExample" class="collapseBox">
+                                <span>-</span>
+                                <span>+</span>
+                            </button>
+                        </div>
+                        <div class="info-middle ht80">
+                            <div class="meter meterFour">
+                                <i>last year</i>
+                                <div class="meter-circle">
+                                    <div class="meter-circle-inner">
+                                        <img src="images/meterFour.png" alt="" />
+                                    </div>
+                                </div>
+                                <div id="counter3">0</div>
+                            </div>
+                            <div class="meter meterFive">
+                                <i>goal</i>
+                                <div class="meter-circle">
+                                    <div class="meter-circle-inner">
+                                        <img src="images/meterFive.png" alt="" />
+                                    </div>
+                                </div>
+                                <div id="counter4">0</div>
+                            </div>
+                            <div class="meter meterSix">
+                                <i>actual</i>
+                                <div class="meter-circle">
+                                    <div class="meter-circle-inner">
+                                        <img src="images/meterSix.png" alt="" />
+                                    </div>
+                                </div>
+                                <div id="counter5">0</div>
+                            </div>
+                        </div>
+                        <div class="info-bottom">
+                            <div class="collapse in collapseBox" id="collapseTwo" aria-expanded="true">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Goal</td>
+                                            <td>
+                                                <span>Actual</span>
+                                                <span>86%</span>
+                                            </td>
+                                            <td>
+                                                <span>Goal</span>
+                                                <div class="clearfix"></div>
+                                                <span>92%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Performance</td>
+                                            <td>
+                                                <span>Last Year</span>
+                                                <span>66%</span>
+                                            </td>
+                                            <td>
+                                                <span>Actual</span>
+                                                <span>105%</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix hidden-lg hidden-md hidden-xs mb30"></div>
+                <div class="col-md-3 col-sm-6 col-xs-12 mb-xs-30">
+                    <div class="info-box">
+                        <div class="info-top">
+                            <i class="icon-agent"></i>
+                            <h3>agent count(net)</h3>
+                            <button type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseExample" class="collapseBox">
+                                <span>-</span>
+                                <span>+</span>
+                            </button>
+                        </div>
+                        <div class="info-middle ht80">
+                            <div class="meter meterSeven">
+                                <i>last year</i>
+                                <div class="meter-circle">
+                                    <div class="meter-circle-inner">
+                                        <img src="images/meterSeven.png" alt="" />
+                                    </div>
+                                </div>
+                                <div id="counter6">0</div>
+                            </div>
+                            <div class="meter meterEight">
+                                <i>goal</i>
+                                <div class="meter-circle">
+                                    <div class="meter-circle-inner">
+                                        <img src="images/meterEight.png" alt="" />
+                                    </div>
+                                </div>
+                                <div id="counter7">0</div>
+                            </div>
+                            <div class="meter meterNine">
+                                <i>actual</i>
+                                <div class="meter-circle">
+                                    <div class="meter-circle-inner">
+                                        <img src="images/meterNine.png" alt="" />
+                                    </div>
+                                </div>
+                                <div id="counter8">0</div>
+                            </div>
+                        </div>
+                        <div class="info-bottom">
+                            <div class="collapse in collapseBox" id="collapseThree" aria-expanded="true">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Goal</td>
+                                            <td>
+                                                <span>Actual</span>
+                                                <span>86%</span>
+                                            </td>
+                                            <td>
+                                                <span>Goal</span>
+                                                <div class="clearfix"></div>
+                                                <span>92%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Performance</td>
+                                            <td>
+                                                <span>Last Year</span>
+                                                <span>66%</span>
+                                            </td>
+                                            <td>
+                                                <span>Actual</span>
+                                                <span>105%</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                        <div class="info-top">
+                            <i class="icon-dollar"></i>
+                            <h3>profit</h3>
+                            <button type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseExample" class="collapseBox">
+                                <span>-</span>
+                                <span>+</span>
+                            </button>
+                        </div>
+                        <div class="info-middle ht80">
+                            <div class="meter meterTen">
+                                <i>last year</i>
+                                <div class="meter-circle">
+                                    <div class="meter-circle-inner">
+                                        <img src="images/meterTen.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="counterNine">0M</div>
+                            </div>
+                            <div class="meter meterEleven">
+                                <i>goal</i>
+                                <div class="meter-circle">
+                                    <div class="meter-circle-inner">
+                                        <img src="images/meterEleven.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="counterTen">0M</div>
+                            </div>
+                            <div class="meter meterTwelve">
+                                <i>actual</i>
+                                <div class="meter-circle">
+                                    <div class="meter-circle-inner">
+                                        <img src="images/meterTwelve.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="counterEleven">0M</div>
+                            </div>
+                        </div>
+                        <div class="info-bottom">
+                            <div class="collapse in collapseBox" id="collapseFour" aria-expanded="true">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Goal</td>
+                                            <td>
+                                                <span>Actual</span>
+                                                <span>86%</span>
+                                            </td>
+                                            <td>
+                                                <span>Goal</span>
+                                                <div class="clearfix"></div>
+                                                <span>92%</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Performance</td>
+                                            <td>
+                                                <span>Last Year</span>
+                                                <span>66%</span>
+                                            </td>
+                                            <td>
+                                                <span>Actual</span>
+                                                <span>105%</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt30">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="info-box">
+                                <div class="info-box-title">
+                                    <div class="pull-left">
+                                        <i class="glyphicon glyphicon-earphone"></i>
+                                        <h3>Follow ups this Week</h3>
+                                    </div>
+                                    <div class="pull-right hidden-xs">
+                                        <i class="glyphicon glyphicon-pencil"></i>
+                                        <h3>Appointments this Week</h3>
+                                    </div>
+                                    <button type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseExample">
+                                        <span>-</span>
+                                        <span>+</span>
+                                    </button>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="collapse in" id="collapseFive" aria-expanded="true">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="glyphicon glyphicon-user"></i>
+                                                                <a href="#">jlicht</a>
+                                                            </td>
+                                                            <td>
+                                                                05/15/2015
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="glyphicon glyphicon-user"></i>
+                                                                <a href="#">jlicht</a>
+                                                            </td>
+                                                            <td>
+                                                                05/15/2015
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="glyphicon glyphicon-user"></i>
+                                                                <a href="#">jlicht</a>
+                                                            </td>
+                                                            <td>
+                                                                05/15/2015
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="glyphicon glyphicon-user"></i>
+                                                                <a href="#">jlicht</a>
+                                                            </td>
+                                                            <td>
+                                                                05/15/2015
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="glyphicon glyphicon-user"></i>
+                                                                <a href="#">jlicht</a>
+                                                            </td>
+                                                            <td>
+                                                                05/15/2015
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="glyphicon glyphicon-user"></i>
+                                                                <a href="#">jlicht</a>
+                                                            </td>
+                                                            <td>
+                                                                05/15/2015
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="glyphicon glyphicon-user"></i>
+                                                                <a href="#">jlicht</a>
+                                                            </td>
+                                                            <td>
+                                                                05/15/2015
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="glyphicon glyphicon-user"></i>
+                                                                <a href="#">jlicht</a>
+                                                            </td>
+                                                            <td>
+                                                                05/15/2015
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="appointments">
+                                                <div class="info-box-title hidden-lg hidden-md hidden-sm mb10">
+                                                    <div class="pull-left">
+                                                        <i class="glyphicon glyphicon-pencil"></i>
+                                                        <h3>Appointments this Week</h3>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="glyphicon glyphicon-user"></i>
+                                                                <a href="#">jlicht</a>
+                                                            </td>
+                                                            <td>
+                                                                05/15/2015
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="glyphicon glyphicon-user"></i>
+                                                                <a href="#">jlicht</a>
+                                                            </td>
+                                                            <td>
+                                                                05/15/2015
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <hr/>
+                                                <div class="recent">
+                                                    <i class="glyphicon glyphicon-time"></i>
+                                                    <h4>recent referrals</h4>
+                                                    <ul>
+                                                        <li>
+                                                            <i class="icon-smile"></i>
+                                                            <a href="#">DRREIE</a> referred
+                                                            <a href="#">CS_Bushwood</a>
+                                                        </li>
+                                                        <li>
+                                                            <i class="icon-smile"></i>
+                                                            <a href="#">DRREIE</a> referred
+                                                            <a href="#">CS_Bushwood</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt30">
+                        <div class="col-xs-12">
+                            <div class="info-box">
+                                <div class="info-box-title">
+                                    <i class="glyphicon glyphicon-user"></i>
+                                    <h3>Past Referrals</h3>
+                                    <button type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseExample">
+                                        <span>-</span>
+                                        <span>+</span>
+                                    </button>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="collapse in" id="collapseSix" aria-expanded="true">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>200</td>
+                                            </tr>
+                                            <tr>
+                                                <td>150</td>
+                                            </tr>
+                                            <tr>
+                                                <td>100</td>
+                                            </tr>
+                                            <tr>
+                                                <td>50</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="graph-bar">
+                                        <div class="graph-bar-jan">
+                                            <span>jan</span>
+                                        </div>
+                                        <div class="graph-bar-feb">
+                                            <span>feb</span>
+                                        </div>
+                                        <div class="graph-bar-mar">
+                                            <span>mar</span>
+                                        </div>
+                                        <div class="graph-bar-apr">
+                                            <span>apr</span>
+                                        </div>
+                                        <div class="graph-bar-may">
+                                            <span>may</span>
+                                        </div>
+                                        <div class="graph-bar-jun">
+                                            <span>jun</span>
+                                        </div>
+                                        <div class="graph-bar-jul">
+                                            <span>jul</span>
+                                        </div>
+                                        <div class="graph-bar-aug">
+                                            <span>aug</span>
+                                        </div>
+                                        <div class="graph-bar-sep">
+                                            <span>sep</span>
+                                        </div>
+                                        <div class="graph-bar-oct">
+                                            <span>oct</span>
+                                        </div>
+                                        <div class="graph-bar-nov">
+                                            <span>nov</span>
+                                        </div>
+                                        <div class="graph-bar-dec">
+                                            <span>dec</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 mt-sm-30">
+                    <div class="info-box">
+                        <div class="info-box-title">
+                            <i class="glyphicon glyphicon-user"></i>
+                            <h3>ALC Referrals(This Year)</h3>
+                            <button type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseExample">
+                                <span>-</span>
+                                <span>+</span>
+                            </button>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="collapse in" id="collapseSeven" aria-expanded="true">
+                            <div class="circular-graph">
+                                <div class="pie-container">
+                                    <div class="pie-background"></div>
+                                    <div class="circle-middle"></div>
+                                    <div class="pie-slice-one holder">
+                                        <div class="pie"></div>
+                                    </div>
+                                    <div class="pie-slice-border-one holder">
+                                        <div class="pie"></div>
+                                    </div>
+                                    <div class="pie-slice-two holder">
+                                        <div class="pie"></div>
+                                    </div>
+                                    <div class="pie-slice-border-two holder">
+                                        <div class="pie"></div>
+                                    </div>
+                                    <div class="pie-slice-three holder">
+                                        <div class="pie"></div>
+                                    </div>
+                                    <div class="pie-slice-border-three holder">
+                                        <div class="pie"></div>
+                                    </div>
+                                    <div class="pie-slice-four holder">
+                                        <div class="pie"></div>
+                                    </div>
+                                    <div class="pie-slice-border-four holder">
+                                        <div class="pie"></div>
+                                    </div>
+                                    <div class="pie-slice-five holder">
+                                        <div class="pie"></div>
+                                    </div>
+                                    <div class="pie-slice-border-five holder">
+                                        <div class="pie"></div>
+                                    </div>
+                                    <div class="pie-slice-six holder">
+                                        <div class="pie"></div>
+                                    </div>
+                                    <div class="pie-slice-border-six holder">
+                                        <div class="pie"></div>
+                                    </div>
+                                </div>
+                                <img src="images/icon-group-lg.png" alt="" />
+                            </div>
+                            <div class="circular-graph-info">
+                                <ul>
+                                    <li>
+                                        <i class="icon-graph-black-dotted"></i> RE-gal (
+                                        <a href="#">10</a> )
+                                    </li>
+                                    <li>
+                                        <i class="icon-graph-black-horz-line"></i> DRREIE (
+                                        <a href="#">9</a> )
+                                    </li>
+                                    <li>
+                                        <i class="icon-graph-red"></i> Mssell4U (
+                                        <a href="#">25</a> )
+                                    </li>
+                                    <li>
+                                        <i class="icon-graph-black"></i> Closer09 (
+                                        <a href="#">24</a> )
+                                    </li>
+                                    <li>
+                                        <i class="icon-graph-brown"></i> Mona_Lot (
+                                        <a href="#">13</a> )
+                                    </li>
+                                    <li>
+                                        <i class="icon-graph-grey"></i> CS_Bushwood (
+                                        <a href="#">5</a> )
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 mt-sm-30">
+                    <div class="info-box">
+                        <div class="info-box-title">
+                            <i class="icon-quick"></i>
+                            <h3>Quick Stats</h3>
+                            <button type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseExample">
+                                <span>-</span>
+                                <span>+</span>
+                            </button>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="collapse in" id="collapseEight" aria-expanded="true">
+                            <ul>
+                                <li>
+                                    First Appointments this month:
+                                    <span>22</span>
+                                </li>
+                                <li>
+                                    Follow-Up Notes this week:
+                                    <span>12</span>
+                                </li>
+                                <li>
+                                    Follow-Up Notes this month:
+                                    <span>70</span>
+                                </li>
+                                <li>
+                                    Follow-Up Notes this year:
+                                    <span>233</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-5 col-xs-12">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="icon-support"></i> Support
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-block-user"></i> Block User
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-accessibility"></i> Accessibility
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12 mt-xs-20 mb-xs-20">
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" class="icon-facebook"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-google-plus"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-linkedin"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-skype"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-twitter"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-md-offset-1 col-sm-3 col-xs-12">
+                    <input type="text" placeholder="Search Site" class="search-footer" />
+                    <button type="button" class="btn btn-search"></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="jquery/bootsrap.min.js" type="text/javascript"></script>
+</body>
+
+</html>

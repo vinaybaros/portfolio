@@ -1,0 +1,124 @@
+body {
+    margin: 10px;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.menu_box {
+    float: left;
+    width: 320px;
+    min-height: 500px;
+    overflow: hidden;
+    margin-left: 38%;
+    padding: 10px;
+    border-radius: 5px;
+    background: #eee;
+}
+
+.menu_box ul {
+    float: left;
+    width: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.3s linear 0.9s;
+}
+
+.menu_box.open ul {
+    width: 100%;
+    transition: all 0.3s linear 0s;
+}
+
+.menu_box ul li {
+    float: left;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 2px solid #000;
+    transition: all 0.1s linear 0.3s;
+}
+
+.menu_box.open ul li {
+    border-bottom-width: 1px;
+    transition: all 0.1s linear 0s;
+}
+
+.menu_box ul li:last-child {
+    transform: scale(0);
+}
+
+.menu_box.open ul li:hover {
+    background: #ddd;
+}
+
+.menu_box.open ul li:last-child {
+    transform: scale(1);
+}
+
+.menu_box ul li p {
+    float: left;
+    width: 100%;
+    font-weight: 600;
+    color: #ff5654;
+    margin: 0 0 4px;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.3s linear 0.5s;
+}
+
+.menu_box.open ul li p {
+    margin: 0;
+    padding: 25px 0;
+    transition: all 0.4s linear 0.4s;
+}
+
+.menu_box.open ul li p:hover {
+    background: #ddd;
+}
+
+.menu_box ul li p span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 10px;
+    text-indent: -200px;
+    transition: all 0.5s linear 0.3s;
+}
+
+.menu_box ul li:nth-child(2) p span {
+    transition-delay: 0.2s;
+}
+
+.menu_box ul li:nth-child(3) p span {
+    transition-delay: 0.1s;
+}
+
+.menu_box ul li:nth-child(4) p span {
+    transition-delay: 0s;
+}
+
+.menu_box.open ul li p span {
+    text-indent: 0;
+    transition: all 0.3s linear 0.6s;
+}
+
+.menu_box.open ul li:nth-child(2) p span {
+    transition-delay: 0.7s;
+}
+
+.menu_box.open ul li:nth-child(3) p span {
+    transition-delay: 0.8s;
+}
+
+.menu_box.open ul li:nth-child(4) p span {
+    transition-delay: 0.9s;
+}

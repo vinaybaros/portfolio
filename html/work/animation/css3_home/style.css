@@ -1,0 +1,572 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: cursive;
+    margin: 0;
+    padding: 20px;
+    background: #eee;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.house-box {
+    float: left;
+    width: 500px;
+    height: 500px;
+    margin-left: 300px;
+    position: relative;
+}
+
+.roof-line-one,
+.roof-line-two,
+.roof-line-three,
+.roof-line-four,
+.roof-line-five,
+.roof-line-six,
+.roof-line-seven,
+.roof-line-eight,
+.roof-line-nine,
+.roof-line-ten {
+    float: left;
+    width: 2px;
+    height: 200px;
+    position: relative;
+    background: #000;
+}
+
+.roof-line-one {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    animation: roofLineOne 2s ease 0s forwards;
+    -webkit-animation: roofLineOne 2s ease 0s forwards;
+}
+
+@keyframes roofLineOne {
+    from {
+        top: -200px;
+        transform: rotate(0deg);
+    }
+    to {
+        top: 0;
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes roofLineOne {
+    from {
+        top: -200px;
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        top: 0;
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+.roof-line-two {
+    left: 139px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    animation: roofLineTwo 2s ease 0s forwards;
+    -webkit-animation: roofLineTwo 2s ease 0s forwards;
+}
+
+@keyframes roofLineTwo {
+    from {
+        top: -200px;
+        transform: rotate(0deg);
+    }
+    to {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+}
+
+@-webkit-keyframes roofLineTwo {
+    from {
+        top: -200px;
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        top: 0;
+        -webkit-transform: rotate(-45deg);
+    }
+}
+
+.roof-line-three {
+    top: 153px;
+    left: -56px;
+    animation: roofLineThree 2.5s ease 0s forwards;
+    -webkit-animation: roofLineThree 2.5s ease 0s forwards;
+}
+
+@keyframes roofLineThree {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 153px;
+    }
+}
+
+@-webkit-keyframes roofLineThree {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 153px;
+    }
+}
+
+.roof-line-four {
+    top: 153px;
+    left: 188px;
+    animation: roofLineFour 2.5s ease 0s forwards;
+    -webkit-animation: roofLineFour 2.5s ease 0s forwards;
+}
+
+@keyframes roofLineFour {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 153px;
+    }
+}
+
+@-webkit-keyframes roofLineFour {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 153px;
+    }
+}
+
+.roof-line-five {
+    top: 230px;
+    left: 63px;
+    height: 248px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    animation: roofLineFive 3s ease 0s forwards;
+    -webkit-animation: roofLineFive 3s ease 0s forwards;
+}
+
+@keyframes roofLineFive {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 230px;
+    }
+}
+
+@-webkit-keyframes roofLineFive {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 230px;
+    }
+}
+
+.roof-line-six {
+    top: 28px;
+    left: 62px;
+    width: 350px;
+    height: 2px;
+    animation: roofLineSix 2s ease 0s forwards;
+    -webkit-animation: roofLineSix 2s ease 0s forwards;
+}
+
+@keyframes roofLineSix {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 28px;
+    }
+}
+
+@-webkit-keyframes roofLineSix {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 28px;
+    }
+}
+
+.roof-line-seven {
+    top: 150px;
+    left: 184px;
+    width: 350px;
+    height: 2px;
+    animation: roofLineSeven 2s ease 0s forwards;
+    -webkit-animation: roofLineSeven 2s ease 0s forwards;
+}
+
+@keyframes roofLineSeven {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 150px;
+    }
+}
+
+@-webkit-keyframes roofLineSeven {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 150px;
+    }
+}
+
+.roof-line-eight {
+    top: -3px;
+    left: 131px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    animation: roofLineEight 2s ease 0s forwards;
+    -webkit-animation: roofLineEight 2s ease 0s forwards;
+}
+
+@keyframes roofLineEight {
+    from {
+        top: -200px;
+        transform: rotate(0deg);
+    }
+    to {
+        top: -3px;
+        transform: rotate(-45deg);
+    }
+}
+
+@-webkit-keyframes roofLineEight {
+    from {
+        top: -200px;
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        top: -3px;
+        -webkit-transform: rotate(-45deg);
+    }
+}
+
+.roof-line-nine {
+    top: 151px;
+    left: 182px;
+    animation: roofLineNine 2.5s ease 0s forwards;
+    -webkit-animation: roofLineNine 2.5s ease 0s forwards;
+}
+
+@keyframes roofLineNine {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 151px;
+    }
+}
+
+@-webkit-keyframes roofLineNine {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 151px;
+    }
+}
+
+.roof-line-ten {
+    top: 151px;
+    left: 184px;
+    width: 352px;
+    height: 2px;
+    animation: roofLineTen 3s ease 0s forwards;
+    -webkit-animation: roofLineTen 3s ease 0s forwards;
+}
+
+@keyframes roofLineTen {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 151px;
+    }
+}
+
+@-webkit-keyframes roofLineTen {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 151px;
+    }
+}
+
+.door {
+    position: absolute;
+    top: 273px;
+    left: 28px;
+    width: 82px;
+    height: 80px;
+    overflow: hidden;
+    animation: door 2s ease 7s forwards;
+    -webkit-animation: door 2s ease 7s forwards;
+}
+
+@keyframes door {
+    from {
+        box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
+    }
+    to {
+        box-shadow: inset 0px 3px 3px 3px rgba(0, 0, 0, 0.4);
+    }
+}
+
+@-webkit-keyframes door {
+    from {
+        -webkit-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
+    }
+    to {
+        -webkit-box-shadow: inset 0px 3px 3px 3px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.door-line-one,
+.door-line-two,
+.door-line-three {
+    display: block;
+    position: relative;
+    width: 2px;
+    height: 80px;
+    background: #000;
+}
+
+.door-line-one {
+    top: -80px;
+    animation: doorLineOne 2s ease 6s forwards;
+    -webkit-animation: doorLineOne 2s ease 6s forwards;
+}
+
+@keyframes doorLineOne {
+    from {
+        top: -80px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@-webkit-keyframes doorLineOne {
+    from {
+        top: -80px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+.door-line-two {
+    left: 80px;
+    animation: doorLineTwo 2s ease 3s forwards;
+    -webkit-animation: doorLineTwo 2s ease 3s forwards;
+}
+
+@keyframes doorLineTwo {
+    from {
+        top: 80px;
+    }
+    to {
+        top: -80px;
+    }
+}
+
+@-webkit-keyframes doorLineTwo {
+    from {
+        top: 80px;
+    }
+    to {
+        top: -80px;
+    }
+}
+
+.door-line-three {
+    top: -199px;
+    left: 121px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    animation: doorLineThree 2s ease 4.5s forwards;
+    -webkit-animation: doorLineThree 2s ease 4.5s forwards;
+}
+
+@keyframes doorLineThree {
+    from {
+        left: 120px;
+    }
+    to {
+        left: 41px;
+    }
+}
+
+@-webkit-keyframes doorLineThree {
+    from {
+        left: 120px;
+    }
+    to {
+        left: 41px;
+    }
+}
+
+.window {
+    position: absolute;
+    top: 220px;
+    left: 330px;
+    width: 100px;
+    height: 60px;
+    overflow: hidden;
+    animation: windowShadow 2s ease 13s forwards;
+    -webkit-animation: windowShadow 2s ease 13s forwards;
+}
+
+@keyframes windowShadow {
+    from {
+        box-shadow: inset 0px -1px 2px 3px rgba(0, 0, 0, 0);
+    }
+    to {
+        box-shadow: inset 0px -1px 2px 3px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@-webkit-keyframes windowShadow {
+    from {
+        box-shadow: inset 0px -1px 2px 3px rgba(0, 0, 0, 0);
+    }
+    to {
+        box-shadow: inset 0px -1px 2px 3px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.window-line-one,
+.window-line-two,
+.window-line-three,
+.window-line-four {
+    display: block;
+    position: relative;
+    width: 2px;
+    height: 60px;
+    background: #000;
+}
+
+.window-line-one {
+    top: -60px;
+    animation: windowLineOne 2s ease 7.5s forwards;
+    -webkit-animation: windowLineOne 2s ease 7.5s forwards;
+}
+
+@keyframes windowLineOne {
+    from {
+        top: -60px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@-webkit-keyframes windowLineOne {
+    from {
+        top: -60px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+.window-line-two {
+    top: -51px;
+    left: -90px;
+    height: 100px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    animation: windowLineTwo 2s ease 9s forwards;
+    -webkit-animation: windowLineTwo 2s ease 9s forwards;
+}
+
+@keyframes windowLineTwo {
+    from {
+        left: -49px;
+    }
+    to {
+        left: 49px;
+    }
+}
+
+@-webkit-keyframes windowLineTwo {
+    from {
+        left: -49px;
+    }
+    to {
+        left: 49px;
+    }
+}
+
+.window-line-three {
+    left: 98px;
+    height: 58px;
+    animation: windowLineThree 2s ease 10s forwards;
+    -webkit-animation: windowLineThree 2s ease 10s forwards;
+}
+
+@keyframes windowLineThree {
+    from {
+        top: 0px;
+    }
+    to {
+        top: -160px;
+    }
+}
+
+@-webkit-keyframes windowLineThree {
+    from {
+        top: 0px;
+    }
+    to {
+        top: -160px;
+    }
+}
+
+.window-line-four {
+    top: -267px;
+    left: 160px;
+    height: 100px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    animation: windowLineFour 2s ease 11.5s forwards;
+    -webkit-animation: windowLineFour 2s ease 11.5s forwards;
+}
+
+@keyframes windowLineFour {
+    from {
+        left: 160px;
+    }
+    to {
+        left: 50px;
+    }
+}
+
+@-webkit-keyframes windowLineFour {
+    from {
+        left: 160px;
+    }
+    to {
+        left: 50px;
+    }
+}

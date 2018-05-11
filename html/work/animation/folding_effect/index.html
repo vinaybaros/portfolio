@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Folding Effect</title>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box_container">
+
+            <div class="box_left">
+
+                <div class="box_left_top box">
+                    <h1>What is Lorem Ipsum</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="javascript:void(0)" class="btn">view more</a>
+                </div>
+
+                <div class="box_left_bottom box">
+                    <h1>What is Lorem Ipsum</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="javascript:void(0)" class="btn">view more</a>
+                </div>
+
+            </div>
+
+            <div class="box_right">
+
+                <div class="box_right_top box">
+                    <h1>What is Lorem Ipsum</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="javascript:void(0)" class="btn">view more</a>
+                </div>
+
+                <div class="box_right_bottom box">
+                    <h1>What is Lorem Ipsum</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="javascript:void(0)" class="btn">view more</a>
+                </div>
+
+            </div>
+
+            <div class="box_modal"></div>
+            <div class="box_modal_center">
+
+                <div class="box_modal_left"></div>
+
+                <div class="box_modal_right"></div>
+
+                <span class="close">close</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $(".box").click(function() {
+                $(".box_left").addClass("move_left");
+                $(".box_right").addClass("move_right");
+                $(".box_modal").addClass("open");
+                $(".box_modal_center").addClass("open");
+            });
+
+            $(".box_modal_center .close").click(function() {
+                $(".box_left").removeClass("move_left");
+                $(".box_right").removeClass("move_right");
+                $(".box_modal").removeClass("open");
+                $(".box_modal_center").removeClass("open");
+                $(".box_modal_center").removeClass("open");
+            });
+
+            $(".box_modal").click(function() {
+                $(".box_left").removeClass("move_left");
+                $(".box_right").removeClass("move_right");
+                $(".box_modal").removeClass("open");
+                $(".box_modal_center").removeClass("open");
+            });
+
+        });
+
+    </script>
+
+</body>
